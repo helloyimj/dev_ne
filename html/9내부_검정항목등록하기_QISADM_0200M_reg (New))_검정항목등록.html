@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>
+        <div class="wrap_contents">
+            <nav class="nav_snb snb_qisadm_01"></nav>
+            <div class="contents">
+                <h2 class="page_title">검정항목 등록하기</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth01">관리자관리</span></a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth02">검정기본정보관리</span></a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth03">검정항목등록</span></a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth04">등록</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_content">
+                    <!-- search area 검색영역 -->
+                    <div class="search_area area_row_1 QISADM_0200M"></div>           
+                    <!-- 입력폼 영역 -->
+                    <div class="rows_input input_area_bg">                        
+                        <div class="wrap_group">                            
+                            <div class="input_group_line column4">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label must">검정항목<br>그룹 코드</h4>
+                                    </div>
+                                    <div class="box_input box_input_select">
+                                        <!-- <div> -->
+                                        <select class="">
+                                            <option value="">그룹코드 선택</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label must">검정항목<br>그룹명</h4>
+                                    </div>
+                                    <div class="box_input box_input_select">
+                                        <!-- <div> -->
+                                        <select class="">
+                                            <option value="">그룹명 선택</option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label must">그룹 코드<br>한글명</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="" />                                        
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">그룹 코드<br>영문명</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="" />                                        
+                                    </div>
+                                </div>                                                               
+                            </div>
+                            <div class="input_group_line column4">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">데이터 타입</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="" />                                        
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">자릿수</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="" />                                        
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">사용 여부</h4>
+                                    </div>
+                                    <div class="box_input box_input_radio">
+                                        <div class="radio_wrap">
+                                            <input type="radio" id="radio01" name="radio-3"><label for="radio01">사용</label></div>
+                                        <div class="radio_wrap">
+                                            <input type="radio" id="radio02" name="radio-3"><label for="radio02">미사용</label></div>
+                                    </div>
+                                </div>
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">자릿수</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="number" class="" min="1" value="1" />                                        
+                                    </div>
+                                </div>                                   
+                            </div>
+                            <div class="input_group_line column1">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">비고 내용</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="" />                                        
+                                    </div>
+                                </div>                                  
+                            </div>
+                        </div>                       
+                    </div>                  
+                    <div class="wrap_table_btn input_area_btn">
+                        <button type="button" class="action_btn btn_filled_green" onclick="openPop('layer','popSaveAlert'); return false;">등록하기</button>                                                                          
+                    </div>
+                <!-- page content end -->
+            </div>
+    <!-- contents end -->
+    <footer class="footer_admin"></footer>
+    </div>
+    <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+    </div>
+<!-- popup -->
+    <!--  <div class="popup_mask"></div> -->
+<!-- QISADM_0100M_reg (New) 내부_검정항목그룹등록하기_QISADM_0100M_검정항목그룹등록_팝업-->
+    <!-- 팝업 - 저장하시겠습니까?  -->
+    <div class="popup_layer popup_alert" id="popSaveAlert">
+        <div class="popup_inner alert_window_bg">
+            <div class="popup_statusbar">              
+                <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popItemManageList'); return false;"></button>
+            </div>
+            <div class="popup_contents">
+                <div class="alert_text_wrap">
+                    <p class="alert_text">저장하시겠습니까?</p>                   
+                </div>               
+                <div class="popup_btn alert_pop_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_black cancel_btn" onclick="closePop('layer','popSaveAlert'); return false;">취소</button>
+                    <button type="button" class="action_btn btn_filled_green" onclick="openPop('layer','popConfirmAlert'); return false;">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 팝업 - 저장하시겠습니까?  -->
+    <div class="popup_layer popup_alert" id="popConfirmAlert">
+        <div class="popup_inner alert_window_bg">
+            <div class="popup_statusbar">              
+                <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popItemManageList'); return false;"></button>
+            </div>
+            <div class="popup_contents">
+                <div class="alert_text_wrap">
+                    <p class="alert_text">계속 등록하시겠습니까?</p>                   
+                </div>               
+                <div class="popup_btn alert_pop_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_black cancel_btn" onclick="closePop('layer','popConfirmAlert'); return false;">닫기</button>
+                    <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popConfirmAlert'); return false;">계속 등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

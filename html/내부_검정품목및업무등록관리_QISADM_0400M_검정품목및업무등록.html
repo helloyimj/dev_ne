@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>      
+        <div class="wrap_contents">     
+            <nav class="nav_snb snb_qisadm_01"></nav>          
+            <div class="contents">
+                <h2 class="page_title">검정품목 및 업무 등록관리</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">관리자관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">검정기본정보관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth03">검정품목 및 업무등록</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li>
+                    </ul>
+                </div>               
+                <div class="page_content">
+                    <div class="search_area area_row_1 QISADM_0400M"></div>         
+                    <!-- table_section -->          
+                    <div class="wrap_table table_margin_none">
+                        <!-- table_list_array -->
+                        <div class="table_upper_show">
+                            <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p> 
+                            <p class="work_label">*발아기간(일)은 발아율 검정시 민원처리기한 + 발아기간(일)로 처리기한이 산정됩니다.</p>
+                            <select class="result_sort select_middle">
+                                <option value="">등록일 역순</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <select class="result_sort">
+                                <option value="">10개씩 보기</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>                             
+                        </div>                      
+                        <!-- table -->
+                        <table class="table table_list">
+                            <caption>검정품목 및 업무등록 관리 목록</caption>
+                            <colgroup>
+                                <col style="width:52px;">
+                                <col style="width:54px;"> 
+                                <col style="width:160px;">
+                                <col style="width:160px;">
+                                <col style="width:160px;">
+                                <col style="width:160px;">
+                                <col style="width:50px;">
+                                <col style="width:100px;">
+                                <col style="width:160px;">
+                                <col style="width:70px;">
+                                <col style="width:96px;">
+                                <col style="width:100px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2"><input type="checkbox" id="check_all_01"></th>
+                                    <th scope="col" rowspan="2">No</th>
+                                    <th scope="col" rowspan="2">품목코드</th>
+                                    <th colspan="2">품목명</th>
+                                    <th scope="col" rowspan="2">학명</th>
+                                    <th scope="col" colspan="2" rowspan="2">대상업무</th>
+                                    <th scope="col" rowspan="2">우수식품 사용코드</th>
+                                    <th scope="col" rowspan="2">발아기간</th>
+                                    <th scope="col" rowspan="2">사용여부</th>
+                                    <th scope="col" rowspan="2">상세보기</th>
+                                </tr>
+                                <tr>                                  
+                                    <th scope="col">한글명</th>
+                                    <th scope="col">영문명</th>
+                                </tr>                             
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">2</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">3</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">4</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">5</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">6</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">7</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02st'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">8</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">9</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">10</td>
+                                    <td>K000000635</td>
+                                    <td>L-글루탐산</td>
+                                    <td>MonosolilL</td>
+                                    <td>hututo tuututo</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                    </td>
+                                    <td>KS H 710</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_detail pop_item_detail" onclick="openPop('layer','popQISADM_0400M_01d'); return false;">선택정보</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table_lower">                           
+                            <!-- pagenation -->            
+                            <div class="wrap_pagenation">
+                                <ul class="pagenation">
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>          
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow last"></a></li>
+                                </ul>
+                            </div>
+                            <!-- pagenation end -->
+                            <!-- buttons -->   
+                            <div class="wrap_table_btn">
+                                <button type="button" class="action_btn btn_filled_green">정보저장</button>
+                                <button type="button" class="action_btn btn_lined_green" onclick="openPop('layer','popQISADM_0400_01s'); return false;">신규등록</button>                                     
+                            </div>
+                        </div>                    
+                    </div>
+                    <!-- table end -->
+                </div>
+                <!-- page content end --> 
+            </div>
+            <!-- contents end -->
+            <!--   <footer class="footer_admin"></footer> -->
+        </div>
+        <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- popup -->
+    <!--  <div class="popup_mask"></div> -->
+    <!-- 내부_검정품목및업무등록관리_대상업무팝업_QISADM_0400_02s_품목별-대상업무-등록 -->
+    <div class="popup_layer" id="popQISADM_0400_02s">
+        <div class="popup_inner mng_items">
+            <div class="popup_statusbar">
+                <h3 class="popup_title">검정품목 및 업무 등록 관리</h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen"></button>              
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISADM_0400_02s'); return false;"></button>
+                </div>
+                
+            </div>
+            <div class="popup_contents">
+                <div class="selected_item_wrap">
+                    <table class="table table_list input_form_table">
+                        <caption>검정품목 및 업무 등록 관리 품목 등록 팝업창 선택 항목 표시 테이블</caption>
+                        <colgroup>
+                            <col style="width:110px;">
+                            <col style="width:auto">                                                    
+                        </colgroup>
+                        <tr>
+                            <th>품목</th>
+                            <td>
+                                <input type="text" class="selected_item" value="I - 글루탐산나트륨 (K000000635)" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="popup_table_wrap wrap_table">
+                    <table class="table table_list">
+                        <caption>검정품목 및 업무 등록 관리 품목 등록 팝업창 목록 테이블</caption>
+                        <colgroup>
+                            <col style="width:52px;">
+                            <col style="width:54px;"> 
+                            <col style="width:80px;">
+                            <col style="width:234px;">
+                            <col style="width:120px;">
+                            <col style="width:130px;">
+                            <col style="width:160px;">
+                            <col style="width:110px;">                           
+                        </colgroup>
+                        <thead>                
+                            <tr>                                  
+                                <th scope="col"><input type="checkbox" id="check_all_02"></th>
+                                <th scope="col">No</th>
+                                <th scope="col">등록</th>
+                                <th scope="col">업무명</th>
+                                <th scope="col">시료 최소량</th>
+                                <th scope="col">사용여부</th>
+                                <th scope="col">등록자 ID</th>
+                                <th scope="col">등록일</th>
+                            </tr>                             
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                             
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                <td class="align_center">1</td>
+                                <td></td>
+                                <td>ISTA 국제종자검정</td>
+                                <td class="align_right">123 mg</td>
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>
+                                <td>sjdfdkdj@naver.com</td>
+                                <td>2023-09-15</td>                         
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="popup_btn">
+                    <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popQISADM_0400_02s'); return false;" >저장하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 검정품목 및 업무 등록 관리 상세보기 팝업창 -->
+    <div class="popup_layer" id="popQISADM_0400M_01d">
+        <div class="popup_inner show_detail">
+            <div class="popup_statusbar">
+                <h3 class="popup_title"></h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen"></button>              
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISADM_0400M_01d'); return false;"></button>
+                </div>                
+            </div>
+            <div class="popup_contents show_detail_inner">  
+                <div class="popup_title_wrap">
+                    <h4>검정품목 및 업무등록 관리 선택 정보</h4>
+                </div>              
+                <div class="popup_table_wrap wrap_table">
+                    <table class="table table_list">
+                        <caption>검정품목 및 업무 등록 관리 품목 등록 팝업창 목록 테이블</caption>
+                        <colgroup>
+                            <col style="width:110px;">
+                            <col style="width:100px;"> 
+                            <col style="width:100px;">
+                            <col style="width:110px;">
+                            <col style="width:70px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">    
+                            <col style="width:110px;">
+                            <col style="width:50px;"> 
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:80px;">
+                            <col style="width:110px;">
+                            <col style="width:50px;">  
+                            <col style="width:55px;">
+                            <col style="width:100px;">
+                            <col style="width:100px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">                           
+                        </colgroup>
+                        <thead>                
+                            <tr>
+                                <th scope="col" rowspan="2">품목코드</th>
+                                <th scope="col" colspan="2">품목명</th>
+                                <th scope="col" rowspan="2">학명</th>
+                                <th scope="col" rowspan="2">Lot. <br>최대중량(톤)</th>
+                                <th scope="col" colspan="3">시료최소중량</th>
+                                <th scope="col" rowspan="2">배지</th>
+                                <th scope="col" colspan="2">온도</th>
+                                <th scope="col" colspan="2">발아조사(일)</th>
+                                <th scope="col" rowspan="2">시료보관일 수</th>
+                                <th scope="col" rowspan="2">휴면타파 등<br>지시사항</th>
+                                <th scope="col" colspan="2" rowspan="2">대상업무</th>
+                                <th scope="col" rowspan="2">시료폐기<br>방법코드</th>
+                                <th scope="col" rowspan="2">우수식품<br>사용코드</th>
+                                <th scope="col" rowspan="2">발아기간(일)</th>
+                                <th scope="col" rowspan="2">사용여부</th>
+                            </tr>
+                            <tr>                                  
+                                <th scope="col">한글명</th>
+                                <th scope="col">영문명</th>
+                                <th scope="col">제출시료</th>
+                                <th scope="col">순도검사</th>
+                                <th scope="col">이종계수</th>
+                                <th scope="col">변온</th>
+                                <th scope="col">항온</th>
+                                <th scope="col">시작</th>
+                                <th scope="col">마감</th>
+                            </tr>                                
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>       
+                                <td class="align_right">22</td>   
+                                <td class="align_center">
+                                    <button type="button" class="lined_green td_btn_enroll pop_mng_items" onclick="openPop('layer','popQISADM_0400_02s'); return false;">등록</button>
+                                </td>
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>                           
+                        </tbody>
+                    </table>
+                </div>              
+            </div>
+        </div>
+    </div>
+    <!-- 내부_검정품목및업무등록관리_신규등록팝업_QISADM_0400_01s_검정품목및업무등록 -->
+    <div class="popup_layer" id="popQISADM_0400_01s">
+        <div class="popup_inner show_detail add_new">            
+            <div class="popup_statusbar">
+                <h3 class="popup_title">검정품목 및 업무 등록관리</h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen" ></button>
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISADM_0400_01s'); return false;"></button>
+                </div>                
+            </div>
+            <div class="popup_contents show_detail_inner"> 
+                <!-- search bar --> 
+                <div class="search_area popup_area_row_1 QISADM_0400_01s"></div>    
+                <!-- table title --> 
+                <div class="title_wrap">
+                    <h4 class="popup_table_title double_bullet">공통품목</h4>
+                    <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p> 
+                </div>
+                <!-- sticky header table -->
+                <div class="popup_table_wrap wrap_table table_common_item wrap_table_sticky table_margin_none">
+                    <table class="table table_list table_sticky">
+                        <caption>검정품목 및 업무 등록 관리 신규등록팝업 공통품목 테이블</caption>
+                        <colgroup>
+                            <col style="width:52px;">
+                            <col style="width:55px;"> 
+                            <col style="width:10%;">
+                            <col style="width:260px;">
+                            <col style="width:120px;">
+                            <col style="width:260px;">
+                            <col style="width:260px;">
+                            <col style="width:260px;">    
+                            <col style="width:120px;">
+                            <col style="width:10%;">                                           
+                        </colgroup>
+                        <thead class="fixed_head">                
+                            <tr>
+                                <th scope="col" style="width:52px;"><input type="checkbox" id="check_all_03"></th>
+                                <th scope="col" style="width:55px;">No</th>
+                                <th scope="col" style="width:10%;">품목 분류코드</th>
+                                <th scope="col">품목 분류명</th>
+                                <th scope="col">품목코드</th>
+                                <th scope="col">품목명(한글)</th>
+                                <th scope="col">품목명(영문)</th>
+                                <th scope="col">학명</th>
+                                <th scope="col">우수식품</th>
+                                <th scope="col" style="width:10%">사용여부</th>                   
+                            </tr>                                            
+                        </thead>
+                        <tbody class="scroll_body">
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>  
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>       
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>       
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr> 
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>             
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>   
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>미곡류</td>
+                                <td>012311</td>
+                                <td>일반계</td>
+                                <td>AFDFSDF</td>
+                                <td>Audududududu</td>
+                                <td></td>                                
+                                <td class="align_center">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>
+                                </td>         
+                            </tr>                                                                                      
+                        </tbody>
+                    </table>                  
+                </div>
+                <!-- table title -->
+                <div class="title_wrap second_one">
+                    <h4 class="popup_table_title double_bullet">검정대상품목</h4>
+                </div>
+                <!-- sticky header table -->
+                <div class="popup_table_wrap wrap_table table_test_item wrap_table_sticky table_margin_none">
+                    <table class="table table_list table_sticky">
+                        <caption>검정품목 및 업무 등록 관리 신규등록팝업 검정대상품목 테이블</caption>
+                        <colgroup>
+                            <col style="width:52px;">
+                            <col style="width:55px;"> 
+                            <col style="width:120px;">
+                            <col style="width:110px;">
+                            <col style="width:110px;">
+                            <col style="width:110px;">
+                            <col style="width:80px;">
+                            <col style="width:80px;">    
+                            <col style="width:80px;">
+                            <col style="width:80px;"> 
+                            <col style="width:100px;">
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:80px;">  
+                            <col style="width:110px;">
+                            <col style="width:95px;">
+                            <col style="width:85px;">
+                            <col style="width:85px;">
+                            <col style="width:85px;">                           
+                        </colgroup>
+                        <thead>                
+                            <tr>
+                                <th scope="col" rowspan="2"><input type="checkbox" id="check_all_04"></th>
+                                <th scope="col" rowspan="2">No</th>
+                                <th scope="col" rowspan="2">품목 분류코드</th>
+                                <th scope="col" colspan="2">품목명</th>
+                                <th scope="col" rowspan="2">학명</th>
+                                <th scope="col" rowspan="2">Lot. <br>최대중량(톤)</th>
+                                <th scope="col" colspan="3">시료최소중량</th>
+                                <th scope="col" rowspan="2">배지</th>
+                                <th scope="col" colspan="2">온도</th>
+                                <th scope="col" colspan="2">발아조사(일)</th>
+                                <th scope="col" rowspan="2">시료보관일 수</th>
+                                <th scope="col" rowspan="2">휴면타파 등<br>지시사항</th>                              
+                                <th scope="col" rowspan="2">시료폐기<br>방법코드</th>
+                                <th scope="col" rowspan="2">우수식품<br>사용코드</th>
+                                <th scope="col" rowspan="2">발아기간(일)</th>
+                                <th scope="col" rowspan="2">사용여부</th>
+                            </tr>
+                            <tr>                                  
+                                <th scope="col">한글명</th>
+                                <th scope="col">영문명</th>
+                                <th scope="col">제출시료</th>
+                                <th scope="col">순도검사</th>
+                                <th scope="col">이종계수</th>
+                                <th scope="col">변온</th>
+                                <th scope="col">항온</th>
+                                <th scope="col">시작</th>
+                                <th scope="col">마감</th>
+                            </tr>                                
+                        </thead>
+                        <tbody class="scroll_body">
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr> 
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>    
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>    
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>   
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>    
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr> 
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>      
+                            <tr>
+                                <td class="align_center"><input type="checkbox" name="chkbox04"></td>
+                                <td class="align_center">1</td>
+                                <td>K000000635</td>
+                                <td>L-글루탐산</td>
+                                <td>MonosolilL</td>
+                                <td>yusususua</td>
+                                <td class="align_right">123</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td>TSA배지</td>
+                                <td class="align_right">23</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">12</td>
+                                <td class="align_right">22</td>
+                                <td></td>                        
+                                <td>MD-001213</td>
+                                <td>MD-dsdsf</td> 
+                                <td class="align_right">22</td>       
+                                <td>미사용</td>            
+                            </tr>                                    
+                        </tbody>
+                    </table>
+                </div>
+                <div class="description_wrap">
+                    <p class="description">*발아기간(일)은 발아율 검정시 민원처리기한 *발아기간(일) 로 처리기한이 산정됩니다.</p>
+                    <div class="table_btn_right table_btn_wrap">           
+                        <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popQISADM_0400_01s'); return false;">저장하기</button>
+                    </div>
+                </div>
+            </div>            
+        </div>       
+    </div>    
+</body>
+
+</html>

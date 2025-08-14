@@ -1,0 +1,101 @@
+
+    <!-- 팝업 -->
+    <div class="mask"></div>
+    <!-- 비밀번호 변경 팝업 -->
+    <div class="popup_layer pop_lg" id="lgPopPass">
+        <div class="pop_title">
+            <h3>비밀번호 변경</h3>
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close"  onclick="closePop('layer','lgPopPass'); return false;"></button>
+        </div>
+        <div class="inner">
+            <p>비밀번호는 8~20자 이내로, 영문, 숫자, 특수문자( ’ “ ￦ | 제외)를 포함해야 합니다.</p>
+            <table class="table table_row">
+                <caption>메뉴 상세 조회</caption>
+                <colgroup>
+                    <col style="width:180px;">
+                    <col style="width:auto; min-width: 300px;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">현재 비밀번호</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="사용중인 비밀번호를 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">새 비밀번호</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="변경할 비밀번호를 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">새 비밀번호 확인</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="변경할 비밀번호를 다시 입력하세요.">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" aria-label="레이어 팝업 닫기" class="btn_submit filled_gray" onclick="closePop('layer','mdPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','mdPop'); return false;">저장</button>
+        </div>
+    </div>
+
+    <!-- 필수 입력 폼 미입력 시-->
+    <div class="popup_layer pop_sm" id="smPopForm">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info"><em class="color_red">항목</em>을(를) 입력해주세요.</p>
+            <p class="note_info"></p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!-- 필수 입력 폼 미입력 시 end -->
+
+    <!--  [저장]-->
+    <div class="popup_layer pop_sm" id="smPopSave">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">변경사항이 저장되었습니다.</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!--  [취소] end -->
+
+    <!--  [취소]-->
+    <div class="popup_layer pop_sm" id="smPopCancle">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">변경 사항이 저장되지 않습니다.</p>
+            <p class="note_info">계속하시겠습니까?</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">취소</button>
+        </div>
+    </div>
+    <!--  [취소] end -->

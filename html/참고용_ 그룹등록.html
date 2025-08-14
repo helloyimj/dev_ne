@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <!-- <script src="../js/gnb.js"></script> -->
+    <!-- <script src="../js/snb.js"></script> -->
+    <script src="../js/app.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrap_contents">
+        <nav class="nav">
+          <div class="area_state">
+            <h2>국민평가관리시스템</h2>
+          </div>
+          <div class="area_menu">
+            <ul>
+              <li class="depth01">
+                <h3 class="depth01_item">평가단원 관리</h3>
+                <ul class="sub_menu depth02_menu">
+                  <li class="depth02"><a href=".html" class="depth02_item">- 평가단원 목록</a></li>
+                  <li class="depth02"><a href=".html" class="depth02_item">- 평가단원 업로드</a></li>
+                </ul>
+              </li>
+              <li class="depth01">
+                <h3 class="depth01_item">평가플랫폼 관리</h3>
+                <ul class="sub_menu depth02_menu">
+                  <li class="depth02"><a href=".html" class="depth02_item">- 평가플랫폼 관리</a></li>
+                  <li class="depth02"><a href=".html" class="depth02_item">- 평가플랫폼 업로드</a></li>
+                </ul>
+              </li>
+              <li class="depth01">
+                <h3 class="depth01_item">산출물 관리</h3>
+                <ul class="sub_menu depth02_menu">
+                  <li class="depth02"><a href=".html" class="depth02_item">- 산출물 목록</a></li>
+                  <li class="depth02"><a href=".html" class="depth02_item">- 산출물 등록</a></li>
+                </ul>
+              </li>
+              <li class="depth01">
+                <h3 class="depth01_item">운영자 관리</h3>
+                <ul class="sub_menu depth02_menu">
+                  <li class="depth02"><a href=".html" class="depth02_item">- 운영자 목록</a></li>
+                  <li class="depth02"><a href=".html" class="depth02_item">- 운영자 등록</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="contents">
+          <h2 class="page_title">무별 검정항목 그룹등록</h2>
+          <div class="page_content item_add_remove">
+            <div class="search_area QISADM_0300_01s"></div>
+
+            <div class="area_row_1_wrap">
+              <div class="search_area">
+                <div class="wrap_info">
+                  <h3>요약정보</h3>
+                  <p>
+                    <span class="color_blue">2025</span>
+                    년&nbsp;&nbsp;&nbsp;전체인원 :
+                    <span class="color_blue">300</span>
+                    명&nbsp;&nbsp;&nbsp;&nbsp;남성 :
+                    <span class="color_blue">150</span>
+                    명&nbsp;&nbsp;&nbsp;&nbsp;여성 :
+                    <span class="color_blue">150</span>
+                    명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 20대 :
+                    <span>00</span>
+                    명&nbsp;&nbsp;&nbsp;* 30대
+                    <span>00</span>
+                    명&nbsp;&nbsp;&nbsp;* 40대
+                    <span>00</span>
+                    명&nbsp;&nbsp;&nbsp;* 50대
+                    <span>00</span>
+                    명&nbsp;&nbsp;&nbsp;* 60 대
+                    <span>00</span>
+                    명
+                  </p>
+                </div>
+                <div class="wrap_done">
+                  <p>
+                    * 평가사이트 지정 완료 :
+                    <span class="color_blue">210</span>
+                    /
+                    <span class="color_blue">300</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="area_row_1_wrap">
+              <div class="search_area">
+                <form class="wrap_input">
+                  <select class="search_select">
+                    <option value="">년도 선택</option>
+                    <option value="">2025</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                  </select>
+                  <input type="text" placeholder="이름,휴대전화번호(-없이), 이메일 주소 등 입력" class="text_select_input" />
+                </form>
+                <form class="wrap_input">
+                  <div class="check_wrap">
+                    <input type="checkbox" id="chkTemp01" name="check1" />
+                    <label for="chkTemp01">심층인터뷰 대상자만 보기</label>
+                  </div>
+                  <div class="check_wrap">
+                    <input type="checkbox" id="chkTemp02" name="check2" />
+                    <label for="chkTemp02">평가대상 사이트 미지정자만 보기</label>
+                  </div>
+                </form>
+                <div class="one_row_btn_wrap">
+                  <button type="button" class="action_btn btn_filled_blue search_btn"><span>조회하기</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- table_section -->
+            <div class="title_wrap">
+              <h4 class="popup_table_title double_bullet">평가단원 관리</h4>
+            </div>
+            <div class="wrap_table table_margin_none">
+              <table class="table table_list">
+                <caption>등록대상 업무</caption>
+                <colgroup>
+                  <col style="width: 54px" />
+                  <col style="width: 200px" />
+                  <col style="width: 300px" />
+                  <col style="width: auto" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">업무 구분 코드</th>
+                    <th scope="col">업무 구분명</th>
+                    <th scope="col">검정항목그룹</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="align_center">1</td>
+                    <td>APOSID</td>
+                    <td>농산물 검정</td>
+                    <td>품위, 발아율, 도정수율, 일반성분</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- table -->
+            </div>
+            <div class="title_wrap second_one">
+              <h4 class="popup_table_title double_bullet">검정항목 그룹등록</h4>
+            </div>
+            <div class="wrap_table_add_item">
+              <div class="wrap_table_selected_item wrap_table_sticky">
+                <table class="table table_list table_sticky">
+                  <caption>검정항목 그룹등록 검정항목그룹</caption>
+                  <colgroup>
+                    <col style="width: 100%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">검정항목그룹</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">GMD 검정</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">LMO 검정</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">단백질</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">동일성 검사</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">술품질 인증검정</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                        <div>
+                          <input type="checkbox" />
+                          <span class="group_name">양곡 표시</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="selected_item_add_btn">
+                <div class="btn_wrap">
+                  <button type="button" class="lined_green circled_btn right_to_left"></button>
+                  <button type="button" class="lined_green circled_btn left_to_right"></button>
+                </div>
+              </div>
+              <div class="wrap_selected_item_listup wrap_table_sticky">
+                <table class="table table_list table_sticky">
+                  <caption>검정항목 그룹등록 검정항목그룹 세부사항</caption>
+                  <colgroup>
+                    <col style="width: 52px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                    <col style="width: 54px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col"><input type="checkbox" id="check_all_01" /></th>
+                      <th scope="col">No</th>
+                      <th scope="col">검정항목그룹</th>
+                      <th scope="col">비고</th>
+                      <th scope="col">정렬순서</th>
+                      <th scope="col">사용순서</th>
+                      <th scope="col">등록자 ID</th>
+                      <th scope="col">등록일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                    <tr>
+                      <td class="align_center"><input type="checkbox" name="chkbox01" /></td>
+                      <td class="align_center">1</td>
+                      <td>도정수율</td>
+                      <td></td>
+                      <td>1</td>
+                      <td>사용</td>
+                      <td>sadfasdf@naver.com</td>
+                      <td>2023-10-20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- table end -->
+            <div class="table_btn gap_adjust">
+              <div class="table_btn_wrap">
+                <button type="button" class="action_btn btn_filled_green cancel_btn">취소하기</button>
+                <button type="button" class="action_btn btn_filled_green">저장하기</button>
+              </div>
+            </div>
+          </div>
+          <!-- page content end -->
+        </div>
+        <!-- contents end -->
+      </div>
+      <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+  </body>
+</html>

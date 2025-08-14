@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="gnb_top"></div>
+      <div class="wrap_contents">
+        <nav class="nav_snb snb_qisadm_01"></nav>
+        <div class="contents">
+          <h2 class="page_title">검정기본정보 등록/매칭</h2>
+          <!-- page content start  -->
+          <div class="wrap_breadcrumb">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+              <li class="breadcrumbs_item">
+                <a href="javascript:;"><span class="breadcrumbs_depth01">검정관리</span></a>
+              </li>
+              <li class="breadcrumbs_item">
+                <a href="javascript:;"><span class="breadcrumbs_depth02">검정기본정보관리</span></a>
+              </li>
+              <li class="breadcrumbs_item">
+                <a href="javascript:;"><span class="breadcrumbs_depth03">검정기본정보 등록/매칭</span></a>
+              </li>
+              <!-- <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li> -->
+            </ul>
+          </div>
+          <div class="page_content match_page">
+            <div class="search_area area_row_1 QISADM_0300_01s"></div>   
+            <!-- table_section -->         
+            <div class="match_temp_wrap">
+              <div class="match_temp">
+                <div class="wrap_table table_top">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">
+                      <h4 class="popup_table_title double_bullet">Step 1. 검정품목 선택</h4>                      
+                    </div>
+                    <div class="table_btn">
+                      <div class="box_input">
+                        <input type="text" class="" placeholder="" />
+                        <button type="button" class="btn_search btn_filled_green">검색</button>
+                      </div> 
+                      <p class="search_result_text"><span class="search_result">1231</span> 건</p>                    
+                      <div class="table_btn_right table_btn_wrap">                     
+                        <button type="button" class="action_btn btn_filled_green">저장</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>검정품목 선택</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 100px" />
+                        <col style="width: 100px" />
+                        <col style="width: 80px" />
+                        <col style="width: 75px" />
+                        <col style="width: 90px" />                    
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_01"/>
+                          </th>
+                          <th scope="col">No</th>                        
+                          <th scope="col">코드</th>
+                          <th scope="col">품목명</th>
+                          <th scope="col">사용여부</th>
+                          <th scope="col">등록자</th>
+                          <th scope="col">등록일</th>                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>미사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>미사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>미사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox01"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>192501</td>
+                          <td>알팔파</td>
+                          <td>사용</td>
+                          <td>김익명</td>
+                          <td>2023-12-12</td>                         
+                        </tr>                        
+                      </tbody>                     
+                    </table>
+                  </div>
+                </div>
+                <div class="wrap_table table_bottom">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">
+                      <h4 class="popup_table_title">미연결 검정기본정보</h4>                      
+                    </div>
+                    <div class="table_btn">
+                      <div class="box_input">
+                        <button type="button" class="btn_add btn_lined_green">추가(↑)</button>
+                        <input type="text" class="" placeholder="" />
+                        <button type="button" class="btn_search btn_filled_green">검색</button>
+                      </div>                                   
+                      <div class="table_btn_right table_btn_wrap">                     
+                        <button type="button" class="add_new_btn btn_filled_green">신규등록</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>미연결 검정기본정보</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 150px" />
+                        <col style="width: 190px" />
+                        <col style="width: 150px" />                 
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_02"/>
+                          </th>
+                          <th scope="col">No</th>
+                          <th scope="col">품목코드</th>
+                          <th scope="col">품목명</th>
+                          <th scope="col">품목영문명</th>                      
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox"  name="chkbox02"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>T000000020</td>
+                          <td>면화</td>
+                          <td></td>                        
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                
+                </div>
+              </div>
+              <div class="match_temp">
+                <div class="wrap_table table_top">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">
+                      <h4 class="popup_table_title double_bullet">Step 2. 검정항목 선택</h4>                      
+                    </div>
+                    <div class="table_btn">                            
+                      <div class="table_btn_right table_btn_wrap">                     
+                        <button type="button" class="action_btn btn_filled_green">저장</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>검정항목 선택</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 160px" />
+                        <col style="width: 80px" />                      
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_03"/>
+                          </th>                       
+                          <th scope="col">No</th>
+                          <th scope="col">검정항목</th>
+                          <th scope="col">사용여부</th>                    
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox03"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                      
+                      </tbody>                     
+                    </table>
+                  </div>
+                </div>
+                <div class="wrap_table table_bottom">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">                                        
+                    </div>
+                    <div class="table_btn">
+                      <div class="box_input">
+                        <button type="button" class="btn_add btn_lined_green">추가(↑)</button>                       
+                      </div>            
+                      <div class="box_input">                        
+                        <input type="text" class="" placeholder="" />
+                        <button type="button" class="btn_search btn_filled_green">검색</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>미연결 검정기본정보</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 160px" />
+                        <col style="width: 80px" />                      
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_04"/>
+                          </th>                       
+                          <th scope="col">No</th>
+                          <th scope="col">검정항목</th>
+                          <th scope="col">사용여부</th>                    
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox04"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>원산지검정</td>
+                          <td>미사용</td>                       
+                        </tr>                      
+                      </tbody>  
+                    </table>
+                  </div>                 
+                </div>
+              </div>
+              <div class="match_temp">
+                <div class="wrap_table table_top">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">
+                      <h4 class="popup_table_title double_bullet">Step 3. 검정방법 선택</h4>                      
+                    </div>
+                    <div class="table_btn">                    
+                      <p class="search_result_text"><span class="search_result">1231</span> 건</p>                    
+                      <div class="table_btn_right table_btn_wrap">                     
+                        <button type="button" class="action_btn btn_filled_green">저장</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>검정방법 선택</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 130px" />
+                        <col style="width: 50px" />
+                        <col style="width: 60px" />
+                        <col style="width: 85px" />              
+                        <col style="width: 80px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_05"/>
+                          </th>
+                          <th scope="col">No</th>                        
+                          <th scope="col">검정방법명(한글)</th>
+                          <th scope="col" colspan="2">전처리방법</th>
+                          <th scope="col">등록자 ID</th>
+                          <th scope="col">사용여부</th>                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>  
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox05"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>                           
+                      </tbody>                     
+                    </table>
+                  </div>
+                </div>
+                <div class="wrap_table table_bottom">
+                  <!-- table_buttons -->
+                  <form class="above_table">
+                    <div class="title_wrap">                                      
+                    </div>
+                    <div class="table_btn">
+                      <div class="box_input">
+                        <button type="button" class="btn_add btn_lined_green">추가(↑)</button>
+                        <input type="text" class="text_box_small" placeholder="" />
+                        <button type="button" class="btn_search btn_filled_green">검색</button>
+                      </div>                                        
+                      <div class="table_btn_wrap">                     
+                        <button type="button" class="pre_btn btn_lined_green">전처리방법등록</button>
+                        <button type="button" class="add_new_btn btn_filled_green">신규등록</button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- table -->
+                  <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                      <caption>미연결 검정정보</caption>
+                      <colgroup>
+                        <col style="width: 54px" />
+                        <col style="width: 60px" />
+                        <col style="width: 130px" />
+                        <col style="width: 50px" />
+                        <col style="width: 60px" />
+                        <col style="width: 85px" />              
+                        <col style="width: 80px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <input type="checkbox" id="check_all_06"/>
+                          </th>
+                          <th scope="col">No</th>                        
+                          <th scope="col">검정방법명(한글)</th>
+                          <th scope="col" colspan="2">전처리방법</th>
+                          <th scope="col">검정기관</th>
+                          <th scope="col">사용여부</th>                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>  
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>       
+                        <tr>
+                          <td class="align_center">
+                            <input type="checkbox" name="chkbox06"/>
+                          </td>
+                          <td class="align_center">1</td>
+                          <td>이화학분석</td>                       
+                          <td>이화학분석</td>
+                          <td class="align_center"><button type="button" class="lined_green td_btn_small">검색</button></td>
+                          <td>akakakak</td>                       
+                          <td>미사용</td>                        
+                        </tr>                           
+                      </tbody>                     
+                    </table>
+                  </div>           
+                </div>
+              </div>
+            </div>            
+            <!-- table end -->
+          </div>
+          <!-- page content end -->
+        </div>
+        <!-- contents end -->
+        <footer class="footer_admin"></footer>
+      </div>
+      <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+  </body>
+</html>

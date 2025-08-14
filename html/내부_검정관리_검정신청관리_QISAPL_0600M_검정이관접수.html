@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>      
+        <div class="wrap_contents">     
+            <nav class="nav_snb snb_qisapl_04"></nav>          
+            <div class="contents">
+                <h2 class="page_title">검정이관접수</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">검정관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">검정신청관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth03">검정이관접수</span></a></li>
+                        <!-- <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li> -->
+                    </ul>
+                </div>               
+                <div class="page_content">
+                    <div class="search_area area_rows_several QISAPL_0600M"></div>                           
+                    <!-- table_section -->          
+                    <div class="wrap_table">
+                        <!-- table_buttons -->
+                        <form class="table_upper">
+                            <div class="table_upper_show one_row">
+                                <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p> 
+                            <!--     <select class="result_sort select_middle">
+                                    <option value="">등록일 역순</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <select class="result_sort">
+                                    <option value="">10개씩 보기</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>  -->  
+                                <div class="table_btn">
+                                    <div class="table_btn_wrap">  
+                                        <button type="button" class="action_btn btn_lined_green">공람올림</button>                                                                                           
+                                        <!-- 내부_검정관리_검정신청관리_QISAPL_0600M_검정이관접수_팝업-->
+                                        <button type="button" class="action_btn btn_lined_green" onclick="openPop('layer','popQISAPL_0600M'); return false;">이관승인</button>                               
+                                        <!-- 내부_검정관리_검정신청관리_QISAPL_9000_01s_반려사유등록 팝업-->
+                                        <button type="button" class="action_btn btn_filled_green" onclick="openPop('layer','popQISAPL_9000_01s'); return false;">반려처리</button>                               
+                                    </div>
+                                </div>                                                                                                
+                            </div>                      
+                        </form> 
+                        <!-- table -->                      
+                        <table class="table table_list thick_header ">
+                            <caption>사전검토 목록</caption>
+                            <colgroup>
+                                <col style="width:52px;">
+                                <col style="width:70px;"> 
+                                <col style="width:105px;">
+                                <col style="width:105px;">
+                                <col style="width:70px;">
+                                <col style="width:95px;">
+                                <col style="width:130px;">
+                                <col style="width:160px;">
+                                <col style="width:90px;">
+                                <col style="width:60px;">
+                                <col style="width:60px;">
+                                <col style="width:105px;">
+                                <col style="width:105px;">
+                                <col style="width:165px;">
+                                <col style="width:80px;">
+                                <col style="width:120px;">              
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input type="checkbox" id="check_all_01"></th>
+                                    <th scope="col">No</th>
+                                    <th scope="col">접수일</th>
+                                    <th scope="col">처리기한</th>
+                                    <th scope="col">등록<br>구분</th>
+                                    <th scope="col">업무<br>구분</th>
+                                    <th scope="col">신청기관<br>(신청인)</th>
+                                    <th scope="col">대상자<br>(업체)</th>    
+                                    <th scope="col">검정인</th>
+                                    <th scope="col">시료</th>
+                                    <th scope="col">검정<br>항목</th>
+                                    <th scope="col">요청일</th>
+                                    <th scope="col">승인일</th>
+                                    <th scope="col">이관<br>요청기관</th>
+                                    <th scope="col">보고서</th>
+                                    <th scope="col">상태</th>
+                                </tr>                                          
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">강원 품질관리과</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명(1)</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>접수결재</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green paper">p</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">농업경영정보과</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>기관이관</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green paper">p</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기 유통관리과</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기 품질관리과</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td class="align_center"><span class="table_icon filled_green electric">e</span></td>
+                                    <td>농산물</td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">김박익명</a></td>
+                                    <td><a href="javascript:;" onclick="openPop('layer','popQISAPL_0400_07s'); return false;">경기도농업기술원</a></td>
+                                    <td>김익명</td>
+                                    <td class="align_right">1</td>
+                                    <td class="align_right">5</td>
+                                    <td>2023-09-15</td>
+                                    <td>2023-09-15</td>
+                                    <td><a href="javascript:;">시험연구소 품질조사과</a></td>
+                                    <td class="align_center"><button type="button" class="lined_green td_btn_small">출력</button></td>
+                                    <td>승인완료</td>
+                                </tr>                     
+                            </tbody>
+                        </table>
+                        <!-- pagenation -->            
+              <!--           <div class="wrap_pagenation pagenation_only">
+                            <ul class="pagenation">
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first"></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>          
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next"></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow last"></a></li>
+                            </ul>
+                        </div> -->
+                        <!-- pagenation end -->
+                    </div>
+                    <!-- table end -->
+                </div>
+                <!-- page content end --> 
+            </div>
+            <!-- contents end -->
+            <!-- <footer class="footer_admin"></footer> -->
+        </div>
+        <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- popup -->
+    <!--  <div class="popup_mask"></div> -->
+    <!-- 내부_검정관리_보완관리_QISAPL_0300_상세 보기 팝업 QISAPL_0400_07s -->
+    <div class="popup_layer popQISAPL_0300_detail" id="popQISAPL_0400_07s">
+        <div class="popup_inner show_detail add_new"> 
+            <div class="popup_statusbar">
+                <h3 class="popup_title">검정신청서조회</h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen"></button>
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISAPL_0400_07s'); return false;"></button>
+                </div>
+            </div>
+            <div class="popup_contents show_detail_inner">
+                <div class="area_input_group">
+                    <!-- <h3 class="input_group_title"></h3> -->
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">신청구분</h4>
+                                </div>
+                                <div class="box_input box_input_radio">
+                                    <div class="radio_wrap">
+                                        <input type="radio" class="readonly" id="radio03" name="radio-3" checked disabled/>
+                                        <label for="radio11">개인</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" class="readonly" id="radio04" name="radio-3" disabled/>
+                                        <label for="radio12">단체</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" class="readonly" id="radio05" name="radio-3" disabled/>
+                                        <label for="radio13">기관</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">업무구분</h4>
+                                </div>
+                                <div class="box_input box_input_select">
+                                    <select class="readonly" disabled>
+                                        <option value="" selected>농산물검정</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">증명서</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="readonly" value="예시답변입니다" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">접수번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="readonly" value="23423423" disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">신청일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" disabled />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">처리기한</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">접수일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">민원접수번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="readonly" value="42324" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">신청자</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">성명</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="최영호" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">소속</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="강원지원/품질관리과" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="033-254-3401" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">검정대상자</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">대상구분</h4>
+                                </div>
+                                <div class="box_input">
+                                    <div class="radio_wrap">
+                                        <input type="radio" class="readonly" id="radio03" name="radio-3" checked disabled/>
+                                        <label for="radio11">개인</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" class="readonly" id="radio04" name="radio-3" disabled/>
+                                        <label for="radio12">단체</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">성명</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="장창준" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">주민등록번호/ <br>법인번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="1231-123123" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="1234-1231" disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">팩스번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="1231-1231" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">휴대폰번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="010-1213-1211" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">이메일</h4>
+                                </div>
+                                <div class="box_input box_input_email">
+                                    <input type="text" class="" placeholder="" value="hosdao2" disabled/>
+                                    <span class="atsign">@</span>
+                                    <select class="" disabled>
+                                        <option value="">직접입력</option>
+                                        <option value="" selected>gmail.com</option>
+                                        <option value=""></option>
+                                    </select>
+                                    <!-- <input type="text" class="" placeholder="" /> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">주소</h4>
+                                </div>
+                                <div class="box_input box_input_address">
+                                    <input type="text" class="" placeholder="" value="12341" disabled/>
+                                    <button type="button" class="btn_search btn_filled_green">검색</button>
+                                    <input type="text" class="" placeholder="" value="금천시 금천로12" disabled/>
+                                    <input type="text" class="" placeholder="" value="123길 12" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">검정담당</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">검정총괄</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="전순연" disabled/>
+                                </div>
+                            </div>
+
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">소속</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="국립농산물품질관리원/농업" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="02-654-3401" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">시료정보</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">점수·중량</h4>
+                                </div>
+                                <div class="box_input box_input_score">
+                                    <input type="text" class="" placeholder="" value="11" disabled/>
+                                    <span>점</span>
+                                    <input type="text" class="" placeholder="" value="11" disabled/>
+                                    <select class="" disabled>
+                                        <option value="">기준선택</option>
+                                        <option value="" selected>선택된 답변</option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">생산지</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="금산" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">생산자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="김춘재" disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">도착일 <br>(예정일)</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-10-10" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">검사 <br>희망일시</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-10-10" disabled/>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">검사 <br>희망장소</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="충청남도 논산시" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">기타</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">검정목적</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="사전검토 테스트" disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">비고</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- table -->
+                <div class="popup_table_wrap wrap_table table_common_item wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                        <caption>시료상세정보</caption>
+                        <colgroup>
+                            <col style="width: 54px" />
+                            <col style="width: 56px" />
+                            <col style="width: 131px" />
+                            <col style="width: 91px" />
+                            <col style="width: 61px" />
+                            <col style="width: 61px" />
+                            <col style="width: 111px" />
+                            <col style="width: 131px" />
+                            <col style="width: 111px" />
+                            <col style="width: 91px" />
+                            <col style="width: 111px" />
+                            <col style="width: 91px" />
+                            <col style="width: 111px" />
+                            <col style="width: 91px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" />
+                                </th>
+                                <th scope="col">No</th>
+                                <th scope="col">품목명</th>
+                                <th scope="col">시료 점수</th>
+                                <th scope="col">단량</th>
+                                <th scope="col">단위</th>
+                                <th scope="col">시료번호</th>
+                                <th scope="col">생산지</th>
+                                <th scope="col">생산자</th>
+                                <th scope="col">
+                                    시료
+                                    <br>
+                                    접수일
+                                </th>
+                                <th scope="col">수거인</th>
+                                <th scope="col">수거일</th>
+                                <th scope="col">수거지</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">2</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">3</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">4</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">5</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">6</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">7</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">8</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">9</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">10</td>
+                                <td class="align_center">파</td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">50</td>
+                                <td>g</td>
+                                <td class="align_center">000001</td>
+                                <td>경기도 이천</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>경기도 이천</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- table -->
+                <div class="wrap_table">
+                    <table class="table table_list">
+                        <caption>검정항목정보</caption>
+                        <colgroup>
+                            <col style="width: 54px" />
+                            <col style="width: 56px" />
+                            <col style="width: auto" />
+                            <col style="width: auto" />
+                            <col style="width: auto" />
+                            <col style="width: auto" />
+                            <col style="width: auto" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" id="check_all_01" />
+                                </th>
+                                <th scope="col">No</th>
+                                <th scope="col">항목</th>
+                                <th scope="col">검정기관</th>
+                                <th scope="col">부서</th>
+                                <th scope="col">담당자 성명</th>
+                                <th scope="col">담당자 직급</th>
+                                <th scope="col">담당자 전화</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">1</td>
+                                <td class="align_center">결정과율</td>
+                                <td class="align_center">검정기관</td>
+                                <td class="align_center">관리과</td>
+                                <td class="align_center"></td>
+                                <td class="align_center">김수거</td>
+                                <td class="align_center">010-1234-1231</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">2</td>
+                                <td class="align_center">결정과율</td>
+                                <td class="align_center">검정기관</td>
+                                <td class="align_center">관리과</td>
+                                <td class="align_center"></td>
+                                <td class="align_center"></td>
+                                <td class="align_center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="popup_btn">
+                    <button type="button" class="action_btn btn_filled_black" onclick="closePop('layer','popQISAPL_0400_07s'); return false;">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 내부_검정관리_검정신청관리_QISAPL_0800M_타기관 신청 접수_신청승인팝업 -->
+    <div class="popup_layer popup_alert" id="popQISAPL_0600M">
+        <div class="popup_inner alert_window_bg">
+            <div class="popup_statusbar">              
+                <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISAPL_0600M'); return false;"></button>
+            </div>
+            <div class="popup_contents">
+                <div class="alert_text_wrap">
+                    <p class="alert_text">이관 접수된 신청 내역을 승인 하시겠습니까?</p>                   
+                    <p class="alert_text alert_description">승인하시면 본 내역은 검정신청등록 메뉴에서<br>신규 리스트로 확인이 가능합니다.
+                        </p>                   
+                </div>               
+                <div class="popup_btn alert_pop_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_black cancel_btn" onclick="closePop('layer','popQISAPL_0600M'); return false;">취소</button>
+                    <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popQISAPL_0600M'); return false;">승인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 내부_검정관리_검정신청관리_QISAPL_9000_01s_반려사유등록 팝업 -->
+    <div class="popup_layer popup_excuse pop_m" id="popQISAPL_9000_01s">
+        <div class="popup_inner popup_excuse_window_bg">
+            <div class="popup_statusbar">       
+                <h3 class="popup_title">반려사유등록</h3>       
+                <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISAPL_9000_01s'); return false;"></button>
+            </div>
+            <div class="popup_contents">
+                <div class="rows_input input_area_bg">                        
+                    <div class="wrap_group">                            
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">반려일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" />                                        
+                                </div>
+                            </div>                                                        
+                        </div>
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">반려사유</h4>
+                                </div>
+                                <div class="box_input">
+                                    <textarea name="" id=""></textarea>                                                                           
+                                </div>
+                            </div>                                  
+                        </div>
+                    </div>                       
+                </div>                  
+                <div class="wrap_table_btn input_area_btn">
+                    <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popQISAPL_9000_01s'); return false;">저장</button>                                                                          
+                    <button type="button" class="action_btn btn_lined_green" onclick="closePop('layer','popQISAPL_9000_01s'); return false;">닫기</button>                                                                          
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

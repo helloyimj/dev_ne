@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>      
+        <div class="wrap_contents">     
+            <nav class="nav_snb snb_qisadm_01"></nav>          
+            <div class="contents">
+                <h2 class="page_title">업무별 검정항목 그룹등록 관리</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">관리자관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">검정기본정보관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth03">업무별 검정항목 그룹등록 관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li>
+                    </ul>
+                </div>               
+                <div class="page_content">
+                    <div class="search_area area_row_1 QISADM_0300_01s"></div>         
+                    <!-- table_section -->          
+                    <div class="wrap_table table_margin_none">
+                        <!-- table_list_array -->
+                        <div class="table_upper_show">
+                            <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p> 
+                            <select class="result_sort select_middle">
+                                <option value="">등록일 역순</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <select class="result_sort">
+                                <option value="">10개씩 보기</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>                             
+                        </div>                      
+                        <!-- table -->
+                        <table class="table table_list">
+                            <caption>업무별 검정항목 그룹등록 관리 목록</caption>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col style="width:150px;"> 
+                                <col style="width:250px;">
+                                <col style="width:auto;">
+                                <col style="width:160px;">
+                                <col style="width:140px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>                                   
+                                    <th scope="col">업무구분코드</th>
+                                    <th scope="col">업무구분명</th>
+                                    <th scope="col">검정항목그룹</th>                       
+                                    <th scope="col">사용여부</th>                                
+                                    <th scope="col">구분</th>                      
+                                </tr>                                                           
+                            </thead>
+                            <tbody>                                
+                                <tr>
+                                    <td class="align_center">1</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">2</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr> 
+                                <tr>
+                                    <td class="align_center">3</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">4</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">5</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">6</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">7</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">8</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">9</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                                <tr>
+                                    <td class="align_center">10</td>
+                                    <td>DJS</td>
+                                    <td>축산물 DNA 동일성 검사</td>
+                                    <td>동일성 검사</td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">사용</option>
+                                            <option value="">미사용</option>                                                                                                  
+                                        </select>
+                                    </td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit">수정하기</button>
+                                    </td>                                                                                                                             
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table_lower">                           
+                            <!-- pagenation -->            
+                            <div class="wrap_pagenation">
+                                <ul class="pagenation">
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>          
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow last"></a></li>
+                                </ul>
+                            </div>
+                            <!-- pagenation end -->
+                            <!-- buttons -->                             
+                            <div class="wrap_table_btn btn_edit_mode">                            
+                                <button type="button" class="action_btn btn_filled_green">변경저장</button>                                                                 
+                            </div>
+                        </div>                    
+                    </div>
+                    <!-- table end -->
+                </div>
+                <!-- page content end --> 
+            </div>
+            <!-- contents end -->
+            <!--   <footer class="footer_admin"></footer> -->
+        </div>
+        <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->         
+</body>
+
+</html>

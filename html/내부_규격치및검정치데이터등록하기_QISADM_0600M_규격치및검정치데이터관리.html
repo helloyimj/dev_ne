@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>      
+        <div class="wrap_contents">     
+            <nav class="nav_snb snb_qisadm_01"></nav>          
+            <div class="contents">
+                <h2 class="page_title">규격치 및 검정치 데이터 등록하기</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">관리자관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">검정기본정보관리</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth03">규격치 및 검정치 데이터관리</span></a></li>
+                        <!-- <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li> -->
+                    </ul>
+                </div>               
+                <div class="page_content">
+                    <div class="search_area area_rows_double QISADM_0600M"></div>         
+                    <!-- table_section -->          
+                    <div class="wrap_table">
+                        <!-- table_list_array -->
+                        <div class="table_upper_show only_selectbox">
+                            <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p>                            
+                            <select class="result_sort select_middle">
+                                <option value="">접수일 역순</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <select class="result_sort">
+                                <option value="">10개씩 보기</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>                             
+                        </div>                      
+                        <!-- table -->
+                        <table class="table table_list thick_header">
+                            <caption>규격치 및 검정치 데이터 목록</caption>
+                            <colgroup>                                
+                                <col style="width:54px;"> 
+                                <col style="width:220px;">
+                                <col style="width:200px;">
+                                <col style="width:250px;">
+                                <col style="width:150px;">
+                                <col style="width:110px;">
+                                <col style="width:110px;">
+                                <col style="width:110px;">
+                                <col style="width:110px;">
+                                <col style="width:110px;">
+                                <col style="width:130px;">
+                            </colgroup> 
+                            <thead>
+                                <tr>                                   
+                                    <th scope="col">No</th>
+                                    <th scope="col">업무구분</th>
+                                    <th scope="col">검정항목그룹</th>
+                                    <th scope="col">검정항목</th>
+                                    <th scope="col">품목</th>
+                                    <th scope="col">검정규격치<br>등록 건 수</th>
+                                    <th scope="col">결과코드값<br>등록 건 수</th>
+                                    <th scope="col">상세항목 유무</th>
+                                    <th scope="col">DNA마커명<br>등록 건 수</th>
+                                    <th scope="col">사용여부</th>
+                                    <th scope="col">구분</th>
+                                </tr>                                                   
+                            </thead>
+                            <tbody>
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>  
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>   
+                                <tr>                                    
+                                    <td class="align_center">1</td>
+                                    <td>ISTA국제종자검정</td>
+                                    <td>GMO검정</td>
+                                    <td>GMO검정</td>
+                                    <td>면화</td>
+                                    <td class="align_right">12</td>
+                                    <td class="align_right">12</td>                                 
+                                    <td>없음</td>
+                                    <td class="align_right">3</td>
+                                    <td>사용</td>
+                                    <td class="align_center">
+                                        <button type="button" class="lined_green td_btn_edit" onclick="openPop('layer','popQISADM_0600_01s'); return false;">수정하기</button>
+                                    </td>
+                                </tr>                              
+                            </tbody>
+                        </table>
+                        <div class="table_lower only_pagenation">                           
+                            <!-- pagenation -->            
+                            <div class="wrap_pagenation">
+                                <ul class="pagenation">
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>          
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next"></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow last"></a></li>
+                                </ul>
+                            </div>
+                            <!-- pagenation end -->                           
+                        </div>                    
+                    </div>
+                    <!-- table end -->
+                </div>
+                <!-- page content end --> 
+            </div>
+            <!-- contents end -->
+            <!--   <footer class="footer_admin"></footer> -->
+        </div>
+        <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->  
+    <!-- popup -->
+    <!--  <div class="popup_mask"></div> -->
+    <!-- 내부_규격치및검정치데이터등록하기_규격치및검정치데이터관리_QISADM_0600_01s_등록수정팝업 -->
+    <div class="popup_layer" id="popQISADM_0600_01s">
+        <div class="popup_inner show_detail">            
+            <div class="popup_statusbar">
+                <h3 class="popup_title">규격치 및 검정데이터 등록</h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen" ></button>
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISADM_0600_01s'); return false;"></button>
+                </div>                
+            </div>
+            <div class="popup_contents modify_inner"> 
+                <div class="area_input_group">
+                    <!-- <h3 class="input_group_title"></h3> -->
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">업무구분</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="GMO검정(GMO)" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">검정항목그룹</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="GMO검정(2542542)" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">검정항목</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="GMO검정(2542542)" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">품목</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="면화(2542542)" />
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="input_group_line">   
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">사용여부</h4>
+                                </div>
+                                <div class="box_input box_input_radio">
+                                    <select title="사용여부" class="table_select">                                        
+                                        <option value="">미사용</option>
+                                        <option value="">사용</option>                                                                         
+                                    </select>                         
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>            
+                </div>     
+                <!-- table_section -->
+                <!-- table - 규격치 -->       
+                <div class="wrap_table">     
+                    <!-- table 상단 제목, 버튼 -->          
+                    <form class="popup_table_upper">
+                        <!-- table title --> 
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">규격치</h4> 
+                        </div>
+                        <!-- table buttons -->
+                        <div class="table_btn">                      
+                            <div class="table_btn_right popup_table_btn_wrap">                         
+                                <button type="button" class="action_btn btn_lined_green">행 추가</button>
+                                <button type="button" class="action_btn btn_filled_green">행 삭제</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- table 시작 -->                
+                    <div class="wrap_table_sticky">
+                        <table class="table table_list table_sticky">
+                            <caption>규격치</caption>
+                            <colgroup>
+                                <col style="width: 54px" />
+                                <col style="width: 70px" />
+                                <col style="width: 180px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />                           
+                                <col style="width: 120px" />                          
+                                <col style="width: 180px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                                <col style="width: 120px" />
+                            </colgroup>
+                            <thead class="fixed_head">
+                                <tr>
+                                    <th scope="col"><input type="checkbox" id="check_all_01"></th>
+                                    <th scope="col">No</th>
+                                    <th scope="col">기준값</th>
+                                    <th scope="col">판정기준코드</th>
+                                    <th scope="col">단위코드</th>
+                                    <th scope="col">적용시점(From)</th>
+                                    <th scope="col">적용시점(To)</th>
+                                    <th scope="col">비고</th>
+                                    <th scope="col">사용여부</th>
+                                    <th scope="col">등록자 ID</th>
+                                    <th scope="col">등록일</th>                              
+                                </tr>
+                            </thead>
+                            <tbody class="scroll_body">
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr> 
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr>    
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>MON3423</td>
+                                    <td>이상</td>
+                                    <td class="align_right">%</td>
+                                    <td>2012-12-12</td>
+                                    <td>2023-12-12</td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>aajajajaj</td>                            
+                                    <td>2023-12-12</td>                          
+                                </tr> 
+                            </tbody>                      
+                        </table>
+                    </div>               
+                </div>
+                <!--  table - 검정치 데이터 -->
+                <div class="wrap_table">  
+                <!-- table 상단 제목, 버튼 -->          
+                    <form class="popup_table_upper">
+                        <!-- table title --> 
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">검정치 데이터</h4> 
+                        </div>
+                        <!-- table buttons -->
+                        <div class="table_btn">                      
+                            <div class="table_btn_right popup_table_btn_wrap">                         
+                                <button type="button" class="action_btn btn_lined_green">행 추가</button>
+                                <button type="button" class="action_btn btn_filled_green">행 삭제</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--  table 시작 - 검정치 데이터 -->
+                    <div class="popup_table_wrap wrap_table table_common_item wrap_table_sticky table_margin_none">
+                        <table class="table table_list table_sticky">
+                            <caption>검정품목 및 업무 등록 관리 신규등록팝업 공통품목 테이블</caption>
+                            <colgroup>
+                                <col style="width:52px;">
+                                <col style="width:70px;"> 
+                                <col style="width:180px">
+                                <col style="width:200px;">
+                                <col style="width:200px;">
+                                <col style="width:120px;">
+                                <col style="width:100px;">
+                                <col style="width:100px;">    
+                                <col style="width:120px;">
+                                <col style="width:120px;">                                           
+                            </colgroup>
+                            <thead class="fixed_head">                
+                                <tr>
+                                    <th scope="col" style="width:52px;"><input type="checkbox" id="check_all_02"></th>
+                                    <th scope="col" style="width:55px;">No</th>
+                                    <th scope="col" style="width:10%;">일련번호코드</th>
+                                    <th scope="col">판정결과값</th>
+                                    <th scope="col">품종별 스코어</th>
+                                    <th scope="col">사용여부</th>
+                                    <th scope="col">국내/외</th>
+                                    <th scope="col">마커수</th>
+                                    <th scope="col">등록자 ID</th>
+                                    <th scope="col" style="width:10%">등록일자</th>                   
+                                </tr>                                            
+                            </thead>
+                            <tbody class="scroll_body">
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox02"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>                          
+                                </tr>                                                                                                            
+                            </tbody>
+                        </table>                  
+                    </div>             
+                </div>
+                <!--  table - DNA 마커명 -->
+                <div class="wrap_table">  
+                    <!-- table 상단 제목, 버튼 -->          
+                    <form class="popup_table_upper">
+                        <!-- table title --> 
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">DNA 마커명</h4> 
+                        </div>
+                        <!-- table buttons -->
+                        <div class="table_btn">                      
+                            <div class="table_btn_right popup_table_btn_wrap">                         
+                                <button type="button" class="action_btn btn_lined_green">행 추가</button>
+                                <button type="button" class="action_btn btn_filled_green">행 삭제</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--  table 시작 - DNA 마커명 -->
+                    <div class="popup_table_wrap wrap_table table_common_item wrap_table_sticky table_margin_none">
+                        <table class="table table_list table_sticky">
+                            <caption>DNA 마커명</caption>
+                            <colgroup>
+                                <col style="width:52px;">
+                                <col style="width:70px;"> 
+                                <col style="width:260px;">
+                                <col style="width:260px;">
+                                <col style="width:260px;">
+                                <col style="width:120px;">
+                                <col style="width:120px;">
+                                <col style="width:120px;">                                                           
+                            </colgroup>
+                            <thead class="fixed_head">                
+                                <tr>
+                                    <th scope="col" style="width:52px;"><input type="checkbox" id="check_all_03"></th>
+                                    <th scope="col" style="width:55px;">No</th>
+                                    <th scope="col" style="width:10%;">마커 이름</th>
+                                    <th scope="col">마커별 스코어</th>
+                                    <th scope="col">생성물질크기</th>
+                                    <th scope="col">사용여부</th>
+                                    <th scope="col">등록자 ID</th>
+                                    <th scope="col">등록일자</th>                                                  
+                                </tr>                                            
+                            </thead>
+                            <tbody class="scroll_body">
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>  
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox03"></td>
+                                    <td class="align_center">1</td>
+                                    <td>K000000635</td>
+                                    <td></td>
+                                    <td></td>                                                                                                                      
+                                    <td class="align_center">
+                                        <select title="사용여부" class="table_select">                                        
+                                            <option value="">미사용</option>
+                                            <option value="">사용</option>                                                                         
+                                        </select>
+                                    </td>
+                                    <td>Audududududu</td>
+                                    <td>2023-12-12</td>            
+                                </tr>                                                                                     
+                            </tbody>
+                        </table>                  
+                    </div>             
+                </div>
+                <div class="table_btn popup_btn_wrap">
+                    <div class="table_btn_right table_btn_wrap">           
+                        <button type="button" class="action_btn btn_filled_black" onclick="closePop('layer','popQISADM_0600_01s'); return false;">닫기</button>
+                        <button type="button" class="action_btn btn_filled_green" onclick="closePop('layer','popQISADM_0600_01s'); return false;">저장하기</button>                    
+                    </div>
+                </div>                                          
+        </div>       
+    </div>    
+</body>
+
+</html>

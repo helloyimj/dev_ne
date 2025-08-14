@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <!-- <script src="../js/gnb.js"></script> -->
+    <!-- <script src="../js/snb.js"></script> -->
+    <!-- <script src="../js/search_area.js"></script> -->
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrap_contents">
+            <div class="contents">
+                <h2 class="page_title"></h2>
+               
+                <div class="page_content">
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer','smPopLevel'); return false;">평가단 등급 구분</button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer','smPopCheckRevoke'); return false;">평가단원 해제</button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer','mdPopDetailInfo'); return false;">평가단원 상세 정보</button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer','mdPopSiteDetail'); return false;">평가사이트 상세 정보</button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer','smPopCheckMaching'); return false;">평가단원 매칭</button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer','smPopCheckDelete'); return false;">산출물 삭제</button>
+
+                                <button type="button" class="action_btn btn_lined_green" onclick="openPop('layer','popQISAPL_0400_01s'); return false;">QISAPL_0400_01s_검정신청등록</button>
+
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+                                <button type="button" class="action_btn btn_lined_ash" onclick="openPop('layer',''); return false;"></button>
+                                <button type="button" class="action_btn btn_filled_ash" onclick="openPop('layer',''); return false;"></button>
+
+
+                </div>
+                <!-- page content end -->
+            </div>
+            <!-- contents end -->
+            <!-- <footer class="footer_admin"></footer> -->
+        </div>
+        <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- popup -->
+     <div class="popup_mask"></div>
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+
+
+    <!--  [평가단 등급 구분]-->
+    <div class="popup_layer pop_sm" id="smPopLevel">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">죄송합니다. <br>
+평가단 등급 구분이 같은 평가단원만 선택이 가능합니다.</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!--  [평가단 등급 구분] end -->
+
+
+    <!--  평가단원 해제 -->
+    <div class="popup_layer pop_sm" id="smPopCheckRevoke">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">선택한 평가단원을 이 사이트의 <br>
+평가단에서 해제 하시겠습니까?</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit btn_filled_black" onclick="closePop('layer','smPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','smPop'); return false;">해제</button>
+        </div>
+    </div>
+    <!--  평가단원 해제 end -->
+
+    
+    <!--  평가단원 매칭 -->
+    <div class="popup_layer pop_sm" id="smPopCheckMaching">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">선택한 평가단원을 이 사이트의 <br>
+평가단으로 매칭 하시겠습니까?</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit btn_filled_black" onclick="closePop('layer','smPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','smPop'); return false;">매칭</button>
+        </div>
+    </div>
+    <!--  평가단원 매칭 end -->
+    
+    <!--  산출물 삭제 -->
+    <div class="popup_layer pop_sm" id="smPopCheckDelete">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">선택한 산출물을 정말 삭제하시겠습니까?</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit btn_filled_black" onclick="closePop('layer','smPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!--  산출물 삭제 end -->
+
+    <!--  평가단원 상세 정보 -->
+    <div class="popup_layer pop_md" id="mdPopDetailInfo">
+        <div class="pop_title">
+            <h3>평가단원 상세 정보</h3>
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','mdPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <table class="table table_row">
+                <caption>평가단원 상세 정보</caption>
+                <colgroup>
+                    <col style="width:155px;">
+                    <col style="width:auto;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <p>주요 사용 기기</p>
+                        </th>
+                        <td>
+                            PC, 모바일
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p>모바일 사용</p>
+                        </th>
+                        <td>
+                            PC, 모바일, 태블릿, 기타
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p>모바일 사용빈도</p>
+                        </th>
+                        <td>
+                            거의 안 함, 가끔, 자주, 매우 자주
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p>전자정부 이용 경험</p>
+                        </th>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p>주 이용 목적</p>
+                        </th>
+                        <td>
+                            정보열람, 예약 및 민원, 업무처리, 기타
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            주 이용 사이트
+                        </th>
+                        <td>
+1) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨<br>
+2) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨<br>
+3) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p>사용자 평가질문</p>
+                        </th>
+                        <td>
+                            질문) 공공 웹 사이트 또는 앱을 이용하여 불편했던 경험이나 <br>
+개선 의견에 경험이 있다면 자유롭게 적어 주세요. ( 300자 이내)<br><br>
+답변) 신청 시 작성한 내용이 그대로 표기됨<br>
+질문) 평가단 활동에 기대하는 점이 있다면 적어 주세요. (300자 이내)
+답변) 신청 시 작성한 내용이 그대로 표기됨
+
+
+
+
+1) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨<br>
+2) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨<br>
+3) 평가 신청 시 작성한 URL / 사이트 명이 그대로 표기됨
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit btn_filled_black" onclick="closePop('layer','mdPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','mdPop'); return false;">해제</button>
+        </div>
+    </div>
+        <!--  평가단원 상세 정보 end -->
+
+
+    <!--  평가사이트 상세 정보 -->
+    <div class="popup_layer pop_md" id="mdPopSiteDetail">
+        <div class="pop_title">
+            <h3>평가사이트 상세 정보</h3>
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','mdPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+
+            <h2 class="table_title">평가 지정 대상 사이트 및 모바일 서비스</h2>
+            <table class="table table_list">
+                <caption>평가 지정 대상 사이트 및 모바일 서비스</caption>
+                <colgroup>
+                  <col style="width: 30%" />
+                  <col style="width: 30%" />
+                  <col style="width: auto" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">웹</th>
+                    <th scope="col">교육부</th>
+                    <th scope="col">사이트(서비스)명</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>웹</td>
+                      <td>경찰청</td>
+                      <td>안전드림</td>
+                  </tr>
+                  <tr>
+                      <td>웹</td>
+                      <td>통계청</td>
+                      <td>국가통계포털</td>
+                  </tr>
+                  <tr>
+                      <td>웹</td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>웹</td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td>모바일</td>
+                      <td>산림청</td>
+                      <td>숲나들이e앱</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_ash" onclick="closePop('layer','mdPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!--  평가사이트 상세 정보 end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="popup_layer popQISAPL_0400_01s" id="popQISAPL_0400_01s">
+        <div class="popup_inner show_detail add_new">
+            <div class="popup_statusbar">
+                <h3 class="popup_title">검정신청등록</h3>
+                <div class="popup_status_btn_wrap">
+                    <button type="button" aria-label="레이어 팝업창 최대화" class="popup_fullscreen"></button>
+                    <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popQISAPL_0400_01s'); return false;"></button>
+                </div>
+            </div>
+            <div class="popup_contents show_detail_inner">
+                <div class="area_input_group">
+                    <!-- <h3 class="input_group_title"></h3> -->
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">신청구분</h4>
+                                </div>
+                                <div class="box_input box_input_radio">
+                                    <div class="radio_wrap">
+                                        <input type="radio" id="radio20" name="radio-12" checked />
+                                        <label for="radio20">개인</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" id="radio21" name="radio-12" />
+                                        <label for="radio21">단체</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" id="radio22" name="radio-12" />
+                                        <label for="radio22">기관</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">신청일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">접수일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">처리일자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" value="2023-09-24" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line">                            
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">업무구분</h4>
+                                </div>
+                                <div class="box_input box_input_select">
+                                    <select class="">
+                                        <option value="">쌀품종검정</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>                            
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">접수번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">접수번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">증명서</h4>
+                                </div>
+                                <div class="box_input box_input_score">
+                                    <span>부본</span>
+                                    <select class="">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>매</span>
+                                    <span>임시본</span>
+                                    <select class="">
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <span>매</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">신청자</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">성명</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="최영호" />
+                                    <!-- 개인 -->
+                                    <button type="button" class="btn_search btn_filled_green"  onclick="openPop('layer','popQISAPL_9000_04s1'); return false;">검색</button>
+                                    <!-- 기관 -->
+                                    <!-- <button type="button" class="btn_search btn_filled_green"  onclick="openPop('layer','popQISAPL_9000_04s1기관'); return false;">검색</button> -->
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">소속</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="강원지원/품질관리과" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="033-254-3401" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">검정대상자</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">대상구분</h4>
+                                </div>
+                                <div class="box_input">
+                                    <div class="radio_wrap">
+                                        <input type="radio" id="radio23" name="radio-13" checked />
+                                        <label for="radio23">개인</label>
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <input type="radio" id="radio24" name="radio-13" />
+                                        <label for="radio24">단체</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">성명</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="장창준" />
+                                    <button type="button" class="btn_search btn_filled_green">검색</button>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">주민등록번호/ <br>법인번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">팩스번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">휴대폰번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">이메일</h4>
+                                </div>
+                                <div class="box_input box_input_email">
+                                    <input type="text" class="" placeholder="" />
+                                    <span class="atsign">@</span>
+                                    <select class="" >
+                                        <option value="">직접입력</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                    <!-- <input type="text" class="" placeholder="" /> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">주소</h4>
+                                </div>
+                                <div class="box_input box_input_address">
+                                    <input type="text" class="" placeholder="" />
+                                    <button type="button" class="btn_search btn_filled_green">검색</button>
+                                    <input type="text" class="" placeholder="" />
+                                    <input type="text" class="" placeholder="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">검정담당</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label must">검정총괄</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="전순연" />
+                                    <button type="button" class="btn_search btn_filled_green">검색</button>
+                                    <button type="button" class="btn_search btn_filled_green">이력조회</button>
+                                </div>
+                            </div>
+
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">소속</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="국립농산물품질관리원/농업" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">전화번호</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="02-654-3401"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">시료정보</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">점수·중량</h4>
+                                </div>
+                                <div class="box_input box_input_score">
+                                    <input type="text" class="" placeholder="" />
+                                    <span class="">점</span>
+                                    <input type="text" class="" placeholder="" />
+                                    <select class="" disabled>
+                                        <option value="">기준선택</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">생산지</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">생산자</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" />
+                                </div>
+                            </div>
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">도착일 <br>(예정일)</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="date" class="" placeholder="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="input_group_title">기타</h3>
+                    <div class="wrap_group">
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">검정목적</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" value="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">비고</h4>
+                                </div>
+                                <div class="box_input">
+                                    <input type="text" class="" placeholder="" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input_group_line column1">
+                            <div class="input_group">
+                                <div class="box_label">
+                                    <h4 class="input_label">첨부파일</h4>
+                                </div>
+                                <div class="box_input box_attached_list">
+                                    <div class="wrap_table_sticky">
+                                        <table class="table table_list table_sticky">
+                                            <caption>첨부파일정보</caption>
+                                            <colgroup>
+                                                <col style="width: 41px">
+                                                <col style="width: auto">
+                                                <col style="width: 200px">
+                                                <col style="width: 554px">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">파일명</th>
+                                                    <th scope="col">업로드 상태</th>
+                                                    <th scope="col" class="align_lfet">용량</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align_center">
+                                                      <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                    </td>
+                                                    <td>화면설계서_내부시스템.pptx</td>
+                                                    <td></td>
+                                                    <td>324.34KB</td>
+                                                </tr>
+                                                <tr>
+                                                  <td class="align_center">
+                                                    <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                  </td>
+                                                  <td>2화면설계서_내부시스템.pptx</td>
+                                                  <td></td>
+                                                  <td>324.34KB</td>
+                                              </tr>
+                                                <tr>
+                                                  <td class="align_center">
+                                                    <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                  </td>
+                                                  <td>3화면설계서_내부시스템.pptx</td>
+                                                  <td></td>
+                                                  <td>324.34KB</td>
+                                              </tr>
+                                                <tr>
+                                                  <td class="align_center">
+                                                    <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                  </td>
+                                                  <td>4화면설계서_내부시스템.pptx</td>
+                                                  <td></td>
+                                                  <td>324.34KB</td>
+                                              </tr>
+                                                <tr>
+                                                  <td class="align_center">
+                                                    <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                  </td>
+                                                  <td>5화면설계서_내부시스템.pptx</td>
+                                                  <td></td>
+                                                  <td>324.34KB</td>
+                                              </tr>
+                                                <tr>
+                                                  <td class="align_center">
+                                                    <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                  </td>
+                                                  <td>화면설계서_내부시스템.pptx</td>
+                                                  <td></td>
+                                                  <td>324.34KB</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn_search btn_filled_green">내 PC</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap_table">
+                    <!-- table_buttons -->
+                    <form class="table_upper">
+                        <div class="table_btn">
+                            <div class="box_table_radio">
+                                <input type="radio" id="radioTable02" name="radio_table_group01">
+                                <label for="radioTable02">검정항목정보</label>
+                            </div>
+                            <div class="table_btn_right table_btn_wrap">
+                                <button type="button" class="action_btn btn_lined_green">이력조회</button>
+                                <button type="button" class="action_btn btn_lined_green">검정자 등록</button>
+                                <button type="button" class="action_btn btn_lined_green">항목+검정자 등록</button>
+                                <button type="button" class="action_btn btn_lined_green">항목 삭제</button>
+                                <button type="button" class="action_btn btn_filled_green ml6">등록완료</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- table -->
+                    <div class="wrap_table_sticky">
+                        <table class="table table_list table_sticky">
+                            <caption>검정항목정보</caption>
+                            <colgroup>
+                                <col style="width: 54px" />
+                                <col style="width: 56px" />
+                                <col style="width: 280px" />
+                                <col style="width: 131px" />
+                                <col style="width: 131px" />
+                                <col style="width: 125px" />
+                                <col style="width: 125px" />
+                                <col style="width: 125px" />
+                                <col style="width: 125px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input type="checkbox" id="check_all_01"></th>
+                                    <th scope="col">No</th>
+                                    <th scope="col">항목</th>
+                                    <th scope="col">검정기관</th>
+                                    <th scope="col">부서</th>
+                                    <th scope="col">담당자 직급</th>
+                                    <th scope="col">담당자 명</th>
+                                    <th scope="col">담당자 전화</th>
+                                    <th scope="col">담당자 등록</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">1</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">2</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">3</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">3</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">3</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="align_center"><input type="checkbox" name="chkbox01"></td>
+                                    <td class="align_center">3</td>
+                                    <td>꼬리곰탕</td>
+                                    <td>000식품과학연구소</td>
+                                    <td>식품조사과</td>
+                                    <td>관리자</td>
+                                    <td>김수거</td>
+                                    <td>010-1234-1231</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <!-- table end -->
+
+            <div class="popup_btn">
+                <!-- <button type="button" class="action_btn btn_filled_black" onclick="closePop('layer','popQISAPL_0400_01s'); return false;">취소</button> -->
+                <button type="button" class="action_btn btn_lined_green">변경하기</button>
+                <button type="button" class="action_btn btn_filled_black" onclick="; return false;">삭제하기</button>
+                <button type="button" class="action_btn btn_lined_green">임시저장</button>
+                <button type="button" class="action_btn btn_filled_green">확인완료</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+     <!-- 비밀번호 변경 팝업 -->
+    <div class="popup_layer pop_lg" id="lgPopPass">
+        <div class="pop_title">
+            <h3>비밀번호 변경</h3>
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close"  o  nclick="closePop('layer','lgPopPass'); return false;"></button>
+        </div>
+        <div class="inner">
+            <p>비밀번호는 8~20자 이내로, 영문, 숫자, 특수문자( ’ “ ￦ | 제외)를 포함해야 합니다.</p>
+            <table class="table table_row">
+                <caption>메뉴 상세 조회</caption>
+                <colgroup>
+                    <col style="width:180px;">
+                    <col style="width:auto; min-width: 300px;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">현재 비밀번호</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="사용중인 비밀번호를 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">새 비밀번호</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="변경할 비밀번호를 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <p class="asterisk">새 비밀번호 확인</p>
+                        </th>
+                        <td>
+                            <input type="text" placeholder="변경할 비밀번호를 다시 입력하세요.">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" aria-label="레이어 팝업 닫기" class="btn_submit filled_gray" onclick="closePop('layer','mdPop'); return false;">취소</button>
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','mdPop'); return false;">저장</button>
+        </div>
+    </div>
+
+    <!-- 필수 입력 폼 미입력 시-->
+    <div class="popup_layer pop_sm" id="smPopForm">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info"><em class="color_red">항목</em>을(를) 입력해주세요.</p>
+            <p class="note_info"></p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!-- 필수 입력 폼 미입력 시 end -->
+
+    <!--  [저장]-->
+    <div class="popup_layer pop_sm" id="smPopSave">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">변경사항이 저장되었습니다.</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+        </div>
+    </div>
+    <!--  [취소] end -->
+
+
+    <!--  [취소]-->
+    <div class="popup_layer pop_sm" id="smPopCancle">
+        <div class="pop_title">
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','smPop'); return false;">
+                <div class="cross"></div>
+            </button>
+        </div>
+        <div class="inner">
+            <p class="note_info">변경 사항이 저장되지 않습니다.</p>
+            <p class="note_info">계속하시겠습니까?</p>
+        </div>
+        <div class="wrap_btns">
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">확인</button>
+            <button type="button" class="btn_submit filled_blue" onclick="closePop('layer','smPop'); return false;">취소</button>
+        </div>
+    </div>
+    <!--  [취소] end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+     <!--  -->
+
+
+</body>
+
+</html>

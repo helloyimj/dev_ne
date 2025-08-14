@@ -1,0 +1,835 @@
+퍼블리싱/public/html/0내부_검정신청등록_신규등록_QISAPL_0400M_검정신청등록.html<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>농식물 품질검정 통합시스템</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gnb_top"></div>
+        <div class="wrap_contents">
+            <nav class="nav_snb snb_examin_04"></nav>
+            <div class="contents">
+                <h2 class="page_title">검정신청등록</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth01">검정관리</span></a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth02">검정신청관리</span></a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="javascript:;"><span class="breadcrumbs_depth03">검정신청등록</span></a>
+                        </li>
+                        <!-- <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth04">등록관리</span></a></li> -->
+                    </ul>
+                </div>
+                <div class="page_content">
+                  <!-- 신청 input 마크업 시작  -->
+
+                    <div class="area_rows_several_wrap">
+                        <div class="area_input_group">
+                          <!-- <h3 class="input_group_title"></h4> -->
+                          <div class="wrap_group">
+                              <!-- <h3 class="input_group_title"></h4> -->
+                              <div class="input_group_line">
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">신청구분</h4>
+                                      </div>
+
+                                      <div class="box_input box_input_radio">
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio03" name="radio-3"><label for="radio11">개인</label></div>
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio04" name="radio-3"><label for="radio12">단체</label></div>
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio05" name="radio-3"><label for="radio13">기관</label></div>
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label must">신청일자</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <!-- <input type="date"> -->
+                                          <input type="date" class="" placeholder="" value="2023-09-24" disabled />
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">접수일자</h4>
+                                      </div>
+                                      <div class="box_input">
+                                        <input type="date">
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">처리일자</h4>
+                                      </div>
+                                      <div class="box_input">
+                                        <input type="date">
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="input_group_line">
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">업무구분</h4>
+                                      </div>
+                                      <div class="box_input box_input_select">
+                                          <!-- <div> -->
+                                          <select class="">
+                                              <option value="">전체</option>
+                                              <option value=""></option>
+                                              <option value=""></option>
+                                          </select>
+                                          <!-- </div> -->
+                                      </div>
+                                  </div>
+
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">신청자</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                                <input type="text" class="" placeholder="" disabled /> -->
+                                <button type="button" class="btn_search btn_filled_green">검색</button>
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">소속</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                                <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <h3 class="input_group_title">검정대상자</h3>
+                          <div class="wrap_group">
+                              <div class="input_group_line">
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">대상구분</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio03" name="radio-3"><label for="radio11">개인</label></div>
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio04" name="radio-3"><label for="radio12">단체</label></div>
+                                          <div class="radio_wrap">
+                                              <input type="radio" id="radio05" name="radio-3"><label for="radio13">기관</label></div>
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label must">성명</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                          <button type="button" class="btn_search btn_filled_green">검색</button>
+
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label must">생년월일/<br>법인번호</h4>
+                                      </div>
+                                      <div class="box_input box_input_select">
+                                              <select class="">
+                                                  <option value="">전체</option>
+                                                  <option value=""></option>
+                                                  <option value=""></option>
+                                              </select>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="input_group_line column1">
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label must">주소</h4>
+                                      </div>
+                                      <div class="box_input box_input_address">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                          <button type="button" class="btn_search btn_filled_green">검색</button>
+                          <input type="text" class="" placeholder="" />
+                          <input type="text" class="" placeholder="" />
+
+
+
+                                      </div>
+                                  </div>
+                              </div>
+
+
+                              <div class="input_group_line">
+                                  <div class="input_group">
+
+                                      <div class="box_label">
+                                          <h4 class="input_label">대표자 명</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+
+                                      <div class="box_label">
+                                          <h4 class="input_label">사업자번호</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">전화번호</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">휴대폰번호</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="input_group_line">
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">팩스번호</h4>
+                                      </div>
+                                      <div class="box_input">
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                                      </div>
+                                  </div>
+                                  <div class="input_group">
+                                      <div class="box_label">
+                                          <h4 class="input_label">이메일</h4>
+                                      </div>
+                                      <div class="box_input box_input_email">
+                                      <!-- <div class="box_input"> -->
+                                          <input type="text" class="" placeholder="" />
+                                          <!-- <input type="text" class="" placeholder="" readonly />
+                          <input type="text" class="" placeholder="" disabled /> -->
+                          <span class="atsign">@</span>
+                                      <select class="">
+                                        <option value="">전체</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                      </select>
+                                    <!-- </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <h3 class="input_group_title">검정담당</h3>
+                          <div class="wrap_group">
+                              <div class="input_group_line">
+
+                                <div class="input_group">
+                                  <div class="box_label">
+                                      <h4 class="input_label">기관 명</h4>
+                                  </div>
+                                  <div class="box_input">
+                                      <input type="text" class="" placeholder="" />
+                                      <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                  </div>
+                                  </div>
+
+                              <div class="input_group">
+                                  <div class="box_label">
+                                      <h4 class="input_label must">성명</h4>
+                                  </div>
+                                  <div class="box_input">
+                                      <input type="text" class="" placeholder="" />
+                                      <!-- <input type="text" class="" placeholder="" readonly />
+                              <input type="text" class="" placeholder="" disabled /> -->
+                              <button type="button" class="btn_search btn_filled_green">검색</button>
+
+                                  </div>
+                              </div>
+                              <div class="input_group">
+                                  <div class="box_label">
+                                    <h4 class="input_label">소속</h4>
+                                  </div>
+                                  <div class="box_input">
+                                      <input type="text" class="" placeholder="" />
+                                      <!-- <input type="text" class="" placeholder="" readonly />
+                              <input type="text" class="" placeholder="" disabled /> -->
+                                  </div>
+                              </div>
+                              <div class="input_group">
+                                  <div class="box_label">
+                                      <h4 class="input_label">전화번호</h4>
+                                  </div>
+                                  <div class="box_input">
+                                      <input type="text" class="" placeholder="" />
+                                      <!-- <input type="text" class="" placeholder="" readonly />
+                              <input type="text" class="" placeholder="" disabled /> -->
+                                  </div>
+                              </div>
+                          </div>
+                          </div>
+
+
+                          <h3 class="input_group_title">시료정보</h3>
+                          <div class="wrap_group">
+                                  <div class="input_group_line">
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">점수·중량</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="text" class="" placeholder="" />
+                                              <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                          </div>
+                                      </div>
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">생산지</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="text" class="" placeholder="" />
+                                              <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                          </div>
+                                      </div>
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">생산자</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="text" class="" placeholder="" />
+                                              <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                          </div>
+                                      </div>
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">도착일 <br>(예정일)</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="date" class="" placeholder="" />
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+
+                          <h3 class="input_group_title">기타</h3>
+                          <div class="wrap_group">
+                                  <div class="input_group_line column2">
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">검정목적</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="text" class="" placeholder="" />
+                                              <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                          </div>
+                                      </div>
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">비고</h4>
+                                          </div>
+                                          <div class="box_input">
+                                              <input type="text" class="" placeholder="" />
+                                              <!-- <input type="text" class="" placeholder="" readonly />
+                                      <input type="text" class="" placeholder="" disabled /> -->
+                                          </div>
+                                      </div>
+                                    
+                                  </div>
+
+                                  <div class="input_group_line column1">
+                                      <div class="input_group">
+                                          <div class="box_label">
+                                              <h4 class="input_label">첨부파일</h4>
+                                          </div>
+                                          <div class="box_input box_attached_list">
+                                              <!-- <input type="text" class="" placeholder="" /> -->
+                                              <div class="wrap_table_sticky">
+                                                <table class="table table_list table_sticky">
+                                                    <caption>첨부파일정보</caption>
+                                                    <colgroup>
+                                                        <col style="width: 41px" />
+                                                        <col style="width: auto" />
+                                                        <col style="width: 200px" />
+                                                        <col style="width: 534px" />
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <!-- <input type="checkbox" /> -->
+                                                            </th>
+                                                            <th scope="col">파일명</th>
+                                                            <th scope="col">업로드 상태</th>
+                                                            <th scope="col">용량</th>
+                                                            <!-- <th scope="col"></th> -->
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="align_center">
+                                                              <button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button>
+                                                            </td>
+                                                            <td>화면설계서_내부시스템.pptx</td>
+                                                            <td></td>
+                                                            <td>324.34KB</td>
+                                                        </tr>
+                                                      
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                              <button type="button" class="btn_search btn_filled_green">내 PC</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                          </div>
+                    </div>
+
+            <!-- 신청 input 마크업 끝  -->
+
+            <!-- table_section -->
+            <div class="wrap_table">
+                <!-- table_buttons -->
+                <form class="table_upper">
+                    <div class="table_btn">
+                        <div class="box_table_radio">
+                            <input type="radio" id="radioTable01" name="radio_table_group01">
+                            <label for="radioTable01">
+                                시료상세정보
+                            </label>
+                        </div>
+                        <div class="table_btn_right table_btn_wrap">
+                            <button type="button" class="action_btn btn_lined_green">수거인 일괄등록 </button>
+                            <button type="button" class="action_btn btn_lined_green">시료 등록</button>
+                            <button type="button" class="action_btn btn_lined_green">항목 삭제</button>
+                            <button type="button" class="action_btn btn_filled_green ml6">등록완료</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- table -->
+                <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                        <caption>시료상세정보</caption>
+                        <colgroup>
+                            <col style="width: 54px" />
+                            <col style="width: 56px" />
+                            <col style="width: 111px" />
+                            <col style="width: 111px" />
+                            <col style="width: 61px" />
+                            <col style="width: 61px" />
+                            <col style="width: 61px" />
+                            <col style="width: 228 px" />
+                            <col style="width: 111px" />
+                            <col style="width: 91px" />
+                            <col style="width: 111px" />
+                            <col style="width: 91px" />
+                            <col style="width: 111px" />
+                            <col style="width: 131px" />
+                            <col style="width: 91px" />
+                            <col style="width: 81px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" />
+                                </th>
+                                <th scope="col">No</th>
+                                <th scope="col">품목명<br>(중분류명)</th>
+                                <th scope="col">품목별칭</th>
+                                <th scope="col">시료 점수</th>
+                                <th scope="col">단량</th>
+                                <th scope="col">단위</th>
+                                <th scope="col">시료번호</th>
+                                <th scope="col">생산지</th>
+                                <th scope="col">생산자</th>
+                                <th scope="col">시료 <br>접수일</th>
+                                <th scope="col">수거인</th>
+                                <th scope="col">수거일</th>
+                                <th scope="col">수거지</th>
+                                <th scope="col">품종명</th>
+                                <th scope="col">검정 <br>항목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">1</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">2</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">3</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">1</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">4</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">5</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">6</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">7</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">8</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">9</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">1</td>
+                            </tr>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">10</td>
+                                <td>꼬리곰탕</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td>Kg</td>
+                                <td class="align_center">2023-4-1234512-GFC-000222</td>
+                                <td>대한민국</td>
+                                <td>김생산</td>
+                                <td>2023-09-12</td>
+                                <td>김수거</td>
+                                <td>2023-09-12</td>
+                                <td>대전시소구길1250 00빌딩 101호</td>
+                                <td>꼬리곰탕</td>
+                                <td class="align_right">2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="sum">
+                                <td class="align_right"></td>
+                                <td class="align_right"></td>
+                                <td></td>
+                                <td></td>
+                                <td class="align_right">3</td>
+                                <td class="align_right">3</td>
+                                <td></td>
+                                <td class="align_center"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="align_right"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="wrap_table">
+                <!-- table_buttons -->
+                <form class="table_upper">
+                    <div class="table_btn">
+                        <div class="box_table_radio">
+                            <input type="radio" id="radioTable02" name="radio_table_group01">
+                            <label for="radioTable02">
+                                검정항목정보
+                            </label>
+                        </div>
+                        <div class="table_btn_right table_btn_wrap">
+                            <button type="button" class="action_btn btn_lined_green">항목+검정자 등록</button>
+                            <button type="button" class="action_btn btn_lined_green">항목 삭제</button>
+                            <button type="button" class="action_btn btn_filled_green ml6">등록완료</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- table -->
+                <div class="wrap_table_sticky">
+                    <table class="table table_list table_sticky">
+                        <caption>검정항목정보</caption>
+                        <colgroup>
+                            <col style="width: 54px" />
+                            <col style="width: 56px" />
+                            <col style="width: 381px" />
+                            <col style="width: 301px" />
+                            <col style="width: 121px" />
+                            <col style="width: 151px" />
+                            <col style="width: 198px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" />
+                                </th>
+                                <th scope="col">No</th>
+                                <th scope="col">항목</th>
+                                <th scope="col">검정기관</th>
+                                <th scope="col">부서</th>
+                                <th scope="col">담당자 명</th>
+                                <th scope="col">담당자 직급</th>
+                                <th scope="col">담당자 전화</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align_center">
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="align_center">1</td>
+                                <td>꼬리곰탕</td>
+                                <td>000식품과학연구소</td>
+                                <td>식품조사과</td>
+                                <td>김수거</td>
+                                <td>관리자</td>
+                                <td>010-1234-1231</td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table_lower">
+                    <!-- pagenation -->
+                    <div class="wrap_pagenation">
+                        <ul class="pagenation">
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow first"></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow prev"></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow next"></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor page_arrow last"></a></li>
+                        </ul>
+                    </div>
+                    <!-- pagenation end -->
+                    <!-- buttons -->
+                    <div class="wrap_table_btn">
+                        <button type="button" class="action_btn btn_lined_green">상세정보등록</button>
+                        <button type="button" class="action_btn btn_filled_green">정보저장</button>
+                        <button type="button" class="action_btn btn_lined_green">신청서출력</button>
+                    </div>
+                </div>
+            </div>
+            <!-- table end -->
+        </div>
+        <!-- page content end -->
+    </div>
+    <!-- contents end -->
+    <footer class="footer_admin"></footer>
+    </div>
+    <!-- wrap_contents end -->
+    </div>
+    <!-- wrapper end -->
+</body>
+
+</html>
